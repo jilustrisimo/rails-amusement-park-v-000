@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   delete '/sign_out', to: 'sessions#destroy'
 
+  post 'rides/new', to: 'rides#new'
+
   resources :attractions
   resources :users
 
